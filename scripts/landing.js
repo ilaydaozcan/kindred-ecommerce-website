@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (track && prevBtn && nextBtn && dotsContainer) {
 
-    const creators = [
+    /* creator data loaded from JSON file */
+    const fallbackCreators = [
       { id: "maya", name: "Maya Chen", role: "Illustrator", supporters: "2,340", earnings: "$12,800/mo", iconImage: "assets/icons/palette.svg", iconBgColor: "#f0e4e4" },
       { id: "jordan", name: "Jordan Ellis", role: "Podcaster", supporters: "8,120", earnings: "$34,200/mo", iconImage: "assets/icons/microphone.svg", iconBgColor: "#dbe0f0" },
       { id: "priya", name: "Priya Sharma", role: "Educator", supporters: "5,670", earnings: "$21,500/mo", iconImage: "assets/icons/books.svg", iconBgColor: "#e8dae8" },
@@ -41,9 +42,30 @@ document.addEventListener('DOMContentLoaded', () => {
       { id: "zoe", name: "Zoe Lin", role: "Matcha Enthusiast", supporters: "3,110", earnings: "$14,500/mo", iconImage: "assets/icons/teacup.svg", iconBgColor: "#dbe8d5" }
     ];
 
+    let creators = [];
     let currentPage = 0;
     let cardsPerView = 4;
     let isStacked = false;
+
+    /* try loading from creators.json or "fall back" to data in local files */
+    fetch('creators.json')
+      .then(res => res.json())
+      .then(data => {
+        creators = data;
+        initCarousel();
+      })
+      .catch(() => {
+        creators = fallbackCreators;
+        initCarousel();
+      });
+
+    function initCarousel() {
+      renderCards();
+      calculateLayout();
+      renderDots();
+      updateCarousel();
+      updateArrows();
+    }
 
     function renderCards() {
       track.innerHTML = creators.map(creator => `
@@ -160,12 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateArrows();
     });
 
-    /* carousel loads */
-    renderCards();
-    calculateLayout();
-    renderDots();
-    updateCarousel();
-    updateArrows();
+    /* init is called after fetch completes */
   }
 
 });
