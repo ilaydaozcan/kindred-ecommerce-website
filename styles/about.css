@@ -1,0 +1,389 @@
+.nav-links {
+  display: flex !important;
+}
+
+/* for small screens, compress link spacing only — nav padding stays 0 40px to match landing.css */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-actions .btn-secondary {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+
+/* hero */
+.about-hero-gradient {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% -10%, rgba(59, 68, 114, 0.14), transparent),
+    radial-gradient(ellipse 55% 40% at 85% 25%, rgba(126, 69, 116, 0.1), transparent),
+    radial-gradient(ellipse 50% 45% at 15% 55%, rgba(201, 93, 69, 0.07), transparent);
+}
+
+/* mission */
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.about-mission-grid .section-title {
+  margin-top: 12px;
+}
+
+.about-mission-body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.about-mission-body:last-child {
+  margin-bottom: 0;
+}
+
+/* values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  max-width: 1060px;
+  margin: 0 auto;
+  background: var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.value-card {
+  background: var(--bg);
+  padding: 40px 32px;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.value-card:hover {
+  background: var(--warm-100);
+  transform: translateY(-2px);
+}
+
+.value-number {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+
+.value-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.value-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* timeline */
+.timeline-container {
+  max-width: 680px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 48px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 52px;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 24px;
+  align-items: start;
+}
+
+.timeline-item-last {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -43px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--border);
+}
+
+.timeline-dot-active {
+  background: var(--rose);
+  box-shadow: 0 0 0 2px var(--rose);
+}
+
+.timeline-year {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--accent);
+  padding-top: 2px;
+  letter-spacing: -0.01em;
+}
+
+.timeline-content {
+  padding-bottom: 0;
+}
+
+.timeline-title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* team */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 28px;
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.07);
+}
+
+.team-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-avatar-1 {
+  background: #F0E8F0;
+}
+
+.team-avatar-2 {
+  background: #DDE0F0;
+}
+
+.team-avatar-3 {
+  background: #EDE0D8;
+}
+
+.team-avatar-4 {
+  background: #D8EDE0;
+}
+
+.team-avatar-5 {
+  background: #F0EAD8;
+}
+
+.team-avatar-6 {
+  background: #E8D8F0;
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.team-role {
+  font-size: 13px;
+  color: var(--accent);
+  margin-top: 3px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.team-bio {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.team-hiring-wrap {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.team-hiring-note {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.team-hiring-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.team-hiring-link:hover {
+  color: var(--accent-hover);
+}
+
+/* press */
+.press-section {
+  background: white;
+}
+
+.press-quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.press-card {
+  padding: 36px 32px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg);
+  transition: all 0.3s ease;
+}
+
+.press-card:hover {
+  background: var(--warm-100);
+  border-color: var(--warm-200);
+}
+
+.press-quote {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.press-source {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* resonsive styles */
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .press-quotes-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-mission-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .timeline-container {
+    padding-left: 36px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 56px 1fr;
+    gap: 0 16px;
+  }
+
+  /* footer-grid, footer-grid > div:first-child, and footer-bottom
+     are already handled identically by landing.css at this breakpoint */
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 28px 0;
+  }
+
+  .section-title {
+    font-size: 32px !important;
+  }
+
+  .hero-title {
+    font-size: 36px !important;
+  }
+
+  .cta-title {
+    font-size: 36px !important;
+  }
+}
