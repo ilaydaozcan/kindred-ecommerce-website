@@ -1,0 +1,90 @@
+[
+  {
+    "id": "maya",
+    "name": "Maya Chen",
+    "role": "Illustrator",
+    "supporters": "2,340",
+    "rawSupporters": 2340,
+    "earnings": "$12,800/mo",
+    "rawEarnings": 12800,
+    "iconImage": "assets/icons/palette.svg",
+    "iconBgColor": "#f0e4e4"
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan Ellis",
+    "role": "Podcaster",
+    "supporters": "8,120",
+    "rawSupporters": 8120,
+    "earnings": "$34,200/mo",
+    "rawEarnings": 34200,
+    "iconImage": "assets/icons/microphone.svg",
+    "iconBgColor": "#dbe0f0"
+  },
+  {
+    "id": "priya",
+    "name": "Priya Sharma",
+    "role": "Educator",
+    "supporters": "5,670",
+    "rawSupporters": 5670,
+    "earnings": "$21,500/mo",
+    "rawEarnings": 21500,
+    "iconImage": "assets/icons/books.svg",
+    "iconBgColor": "#e8dae8"
+  },
+  {
+    "id": "alex",
+    "name": "Alex Rivera",
+    "role": "Musician",
+    "supporters": "3,890",
+    "rawSupporters": 3890,
+    "earnings": "$18,900/mo",
+    "rawEarnings": 18900,
+    "iconImage": "assets/icons/music-note.svg",
+    "iconBgColor": "#eee0d5"
+  },
+  {
+    "id": "liam",
+    "name": "Liam Thorne",
+    "role": "UX Designer",
+    "supporters": "4,150",
+    "rawSupporters": 4150,
+    "earnings": "$19,200/mo",
+    "rawEarnings": 19200,
+    "iconImage": "assets/icons/wireframe.svg",
+    "iconBgColor": "#d5e5ee"
+  },
+  {
+    "id": "chloe",
+    "name": "Chloe Vance",
+    "role": "DIY Hardware Maker",
+    "supporters": "6,420",
+    "rawSupporters": 6420,
+    "earnings": "$24,100/mo",
+    "rawEarnings": 24100,
+    "iconImage": "assets/icons/circuit.svg",
+    "iconBgColor": "#e0ebd5"
+  },
+  {
+    "id": "mateo",
+    "name": "Mateo Cruz",
+    "role": "Pet Foster Advocate",
+    "supporters": "9,850",
+    "rawSupporters": 9850,
+    "earnings": "$41,000/mo",
+    "rawEarnings": 41000,
+    "iconImage": "assets/icons/paw-print.svg",
+    "iconBgColor": "#f0d5d5"
+  },
+  {
+    "id": "zoe",
+    "name": "Zoe Lin",
+    "role": "Matcha Enthusiast",
+    "supporters": "3,110",
+    "rawSupporters": 3110,
+    "earnings": "$14,500/mo",
+    "rawEarnings": 14500,
+    "iconImage": "assets/icons/teacup.svg",
+    "iconBgColor": "#dbe8d5"
+  }
+]
